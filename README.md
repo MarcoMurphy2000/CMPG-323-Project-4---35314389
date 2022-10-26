@@ -7,7 +7,7 @@ Testing can be a laborous, repetitive, and time consuming process. Ideally, inst
 For the web application created in Project 3, before this solution could be published, it would have to pass (UAT). This task would usually be performed by a team of "testers" entrusted dataset for input to test weather or not the desired output will be produced. Project 4 requires the creation of a software robot to do this task of testing the solution. <br /><br />
 
 ## How to use the project (for users)
-The project consists of a "create" workflow and a "read, update & delete" workflow. ><br />
+The project consists of a "create" workflow and a "read, update & delete" workflow. <br />
 The create workflow once excecuted will try to create each row in the provided excel workbook sheet. Simply put, there are 3 main sequences for the create workflow. Each sequence takes one of the sheets in the workbook (Zone, Category, Device) and places that specific sheets data in a dataTable which it the used to insert the row data into the web appplication. AFter each row has been inserted, the value is looked for to ensure that it has been created. If so, the ecel wrkbook test results sheet is updated at that values specific cell (TRUE or false). This logic is used throughout the project for read, update and delete. <br />
 The "read, update & delete" workflow checks if the value can be read and the updates the excel worksheet. Checks if it can be edited. Updated the excel worksheet. And finally tries to delete a row value, followed by an update to the excel worksheet. This process is followed for each sheet (Zone, Category, Device).<br /><br />
 
